@@ -8,7 +8,7 @@ export const axios = Axios.create({
 axios.interceptors.response.use(
   (response) => {
     console.log(response.data);
-    return response.data;
+    return response.data.results;
   },
   (error) => {
     const message = error.response?.data?.message || error.message;
