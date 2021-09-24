@@ -19,6 +19,11 @@ export type Move = {
 export type Evolution = {};
 
 export type Pokemon = {
+  name: string;
+  url: string;
+};
+
+export type TransformedPokemon = {
   id: number;
   name: string;
   image: string;
